@@ -90,3 +90,6 @@ Please read our [Logo and Trademark Policy](TRADEMARK_POLICY.md).
 # erpnext
 # custom
 # erpnext
+# demo_classita
+# demo_classita
+# demo_classita
