@@ -185,8 +185,7 @@
    "oldfieldtype": "Select",
    "options": "PUR-ORD-.YYYY.-",
    "print_hide": 1,
-   "reqd": 1,
-   "set_only_once": 1
+   "reqd": 1
   },
   {
    "bold": 1,
@@ -1275,7 +1274,7 @@
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-10-01 20:58:07.851037",
+ "modified": "2024-06-07 15:38:28.983456",
  "modified_by": "Administrator",
  "module": "Buying",
  "name": "Purchase Order",

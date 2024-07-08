@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-08 16:26:17.917314",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "pono",
+  "supplier",
+  "type",
+  "column_break_hcbj",
+  "courier",
+  "refno",
+  "po_item_section",
+  "item"
+ ],
+ "fields": [
+  {
+   "fieldname": "refno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Courier Reference No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "LD - Lap-Dip\nSH - Shipment Sample"
+  },
+  {
+   "fieldname": "courier",
+   "fieldtype": "Link",
+   "label": "Courier",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pono",
+   "fieldtype": "Link",
+   "label": "Purchase Order ",
+   "options": "Purchase Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Table",
+   "label": "Item",
+   "options": "Lab-Dip And Shipment Sample Submission Item"
+  },
+  {
+   "fieldname": "po_item_section",
+   "fieldtype": "Section Break",
+   "label": "PO Item"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "LDSHS####-YYYY",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "pono.supplier_name",
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hcbj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-24 15:33:58.422947",
+ "modified_by": "Administrator",
+ "module": "Buying",
+ "name": "Lab-Dip And Shipment Sample Submission",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
