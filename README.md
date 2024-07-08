@@ -92,3 +92,4 @@ Please read our [Logo and Trademark Policy](TRADEMARK_POLICY.md).
 # erpnext
 # demo_classita
 # demo_classita
+# demo_classita
